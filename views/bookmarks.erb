@@ -1,3 +1,5 @@
+<%= flash[:notice] %> <br>
+
 <a href="/bookmarks/new"> Add Bookmark  </a><br>
 
 <% @bookmarks.each do |bookmark| %>
@@ -10,3 +12,4 @@
 <input type="submit" value="Update">
 </form>
 <% end %>
+

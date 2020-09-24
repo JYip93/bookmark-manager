@@ -26,19 +26,25 @@ describe Bookmark do
   end
   describe '#create' do
     it 'Adds a new bookmark url' do
-      Bookmark.create('Test', "www.test.com")
-      expect(Bookmark.all[0].url).to eq('www.test.com')
+      Bookmark.create('Test', "http://www.test.com")
+      expect(Bookmark.all[0].url).to eq('http://www.test.com')
     end
 
     it 'Adds the new bookmark title' do
-      Bookmark.create('Test', "www.test.com")
+      Bookmark.create('Test', "http://www.test.com")
       expect(Bookmark.all[0].title).to include('Test')
     end
+
+    it 'if user adds invalid url expect .all to be empty' do
+      Bookmark.create('Test', "ohoh.test.com")
+      expect(Bookmark.all.length).to eq 0
+    end 
+
   end
 
   describe '#delete' do
     it 'Delete a bookmark from bookmark page' do
-      bookmark = Bookmark.create('Test', "www.test.com")
+      bookmark = Bookmark.create('Test', "http://www.test.com")
       Bookmark.delete(bookmark.id)
       expect(Bookmark.all.length).to eq 0
     end
@@ -46,7 +52,7 @@ describe Bookmark do
 
   describe '#update' do
     it 'updates an existing bookmark' do
-      bookmark = Bookmark.create('Test', "www.test.com")
+      bookmark = Bookmark.create('Test', "http://www.test.com")
       Bookmark.update(bookmark.id, 'makers', 'http://makers.co.uk')
       expect(Bookmark.all[0].title).to eq('makers')
       expect(Bookmark.all[0].url).to eq('http://makers.co.uk')
