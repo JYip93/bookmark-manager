@@ -3,18 +3,19 @@ describe Bookmark do
 
   let(:title) { 'Test' }
   let(:url) { 'www.test.com' }
+  let(:id) {1}
 
   it 'takes a title and url on initialisation' do
-    expect(Bookmark).to respond_to(:new).with(2).arguments
+    expect(Bookmark).to respond_to(:new).with(3).arguments
   end
 
   it 'stores the title given' do
-    bookmark = Bookmark.new(title, url)
+    bookmark = Bookmark.new(title, url, id)
     expect(bookmark.title).to eq title
   end
 
   it 'stores the url given' do
-    bookmark = Bookmark.new(title, url)
+    bookmark = Bookmark.new(title, url, id)
     expect(bookmark.url).to eq url
   end
 
@@ -34,5 +35,14 @@ describe Bookmark do
       expect(Bookmark.all[0].title).to include('Test')
     end
   end
+
+  describe '#delete' do
+    it 'Delete a bookmark from bookmark page' do
+      bookmark = Bookmark.create('Test', "www.test.com")
+      Bookmark.delete(bookmark.id)
+      expect(Bookmark.all.length).to eq 0
+    end
+  end
+
 
 end
