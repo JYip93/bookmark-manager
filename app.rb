@@ -2,6 +2,7 @@ require 'sinatra/base'
 require_relative './lib/bookmark'
 require_relative './lib/comment'
 require_relative './lib/tag'
+require_relative './lib/bookmark_tag'
 require_relative 'database_connection_setup'
 require 'sinatra/flash'
 require 'uri'
@@ -62,7 +63,7 @@ class BookmarkManager < Sinatra::Base
 
   post '/bookmarks/:id/tags' do
     tag = Tag.create(params[:Tag])
-    #create tag in tag table and create bookmark_tag entry in bookmark_tag table
+    Bookmark_tag.create(params[:id], tag.id)
     redirect '/bookmarks'
   end
 
