@@ -51,8 +51,6 @@ class Bookmark
     array_of_tag_names
   end
 
-  array = [[4,1], [4,7]]
-
   private
 
   def self.check_url(url)
