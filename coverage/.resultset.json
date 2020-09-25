@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/student/Projects/week_4/bookmark_manager_3/bookmark-manager/spec/bookmark_spec.rb": {
+      "/Users/farhaan/Projects/week4/pair-programming/johnny/bookmark-manager/spec/bookmark_spec.rb": {
         "lines": [
           1,
           1,
@@ -77,7 +77,7 @@
           null
         ]
       },
-      "/Users/student/Projects/week_4/bookmark_manager_3/bookmark-manager/spec/comment_spec.rb": {
+      "/Users/farhaan/Projects/week4/pair-programming/johnny/bookmark-manager/spec/comment_spec.rb": {
         "lines": [
           1,
           1,
@@ -93,7 +93,7 @@
           null
         ]
       },
-      "/Users/student/Projects/week_4/bookmark_manager_3/bookmark-manager/spec/database_connection_spec.rb": {
+      "/Users/farhaan/Projects/week4/pair-programming/johnny/bookmark-manager/spec/database_connection_spec.rb": {
         "lines": [
           1,
           null,
@@ -115,7 +115,7 @@
           null
         ]
       },
-      "/Users/student/Projects/week_4/bookmark_manager_3/bookmark-manager/spec/delete_bookmark_spec.rb": {
+      "/Users/farhaan/Projects/week4/pair-programming/johnny/bookmark-manager/spec/delete_bookmark_spec.rb": {
         "lines": [
           1,
           1,
@@ -130,7 +130,7 @@
           null
         ]
       },
-      "/Users/student/Projects/week_4/bookmark_manager_3/bookmark-manager/spec/feature/bookmark_feature_spec.rb": {
+      "/Users/farhaan/Projects/week4/pair-programming/johnny/bookmark-manager/spec/feature/bookmark_feature_spec.rb": {
         "lines": [
           1,
           null,
@@ -157,22 +157,8 @@
           null
         ]
       },
-      "/Users/student/Projects/week_4/bookmark_manager_3/bookmark-manager/spec/feature/bookmark_tags_spec.rb": {
+      "/Users/farhaan/Projects/week4/pair-programming/johnny/bookmark-manager/spec/feature/bookmark_tags_spec.rb": {
         "lines": [
-          1,
-          1,
-          1,
-          1,
-          1,
-          0,
-          0,
-          null,
-          null
-        ]
-      },
-      "/Users/student/Projects/week_4/bookmark_manager_3/bookmark-manager/spec/feature/comments_spec.rb": {
-        "lines": [
-          1,
           1,
           1,
           1,
@@ -184,7 +170,21 @@
           null
         ]
       },
-      "/Users/student/Projects/week_4/bookmark_manager_3/bookmark-manager/spec/feature/create_bookmark_spec.rb": {
+      "/Users/farhaan/Projects/week4/pair-programming/johnny/bookmark-manager/spec/feature/comments_spec.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/farhaan/Projects/week4/pair-programming/johnny/bookmark-manager/spec/feature/create_bookmark_spec.rb": {
         "lines": [
           null,
           null,
@@ -205,7 +205,7 @@
           null
         ]
       },
-      "/Users/student/Projects/week_4/bookmark_manager_3/bookmark-manager/spec/feature/delete_bookmark_spec.rb": {
+      "/Users/farhaan/Projects/week4/pair-programming/johnny/bookmark-manager/spec/feature/delete_bookmark_spec.rb": {
         "lines": [
           1,
           1,
@@ -220,7 +220,7 @@
           null
         ]
       },
-      "/Users/student/Projects/week_4/bookmark_manager_3/bookmark-manager/spec/feature/entering_invalid_url_spec.rb": {
+      "/Users/farhaan/Projects/week4/pair-programming/johnny/bookmark-manager/spec/feature/entering_invalid_url_spec.rb": {
         "lines": [
           1,
           1,
@@ -235,7 +235,7 @@
           null
         ]
       },
-      "/Users/student/Projects/week_4/bookmark_manager_3/bookmark-manager/spec/feature/update_bookmark_spec.rb": {
+      "/Users/farhaan/Projects/week4/pair-programming/johnny/bookmark-manager/spec/feature/update_bookmark_spec.rb": {
         "lines": [
           1,
           1,
@@ -247,11 +247,25 @@
           1,
           1,
           1,
+          null,
+          null
+        ]
+      },
+      "/Users/farhaan/Projects/week4/pair-programming/johnny/bookmark-manager/spec/tags_spec.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
           null,
           null
         ]
       }
     },
-    "timestamp": 1601046099
+    "timestamp": 1601047396
   }
 }
