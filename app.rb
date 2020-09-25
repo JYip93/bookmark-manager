@@ -43,6 +43,15 @@ class BookmarkManager < Sinatra::Base
     redirect '/bookmarks'
   end 
 
+  get '/bookmarks/comments/:id' do
+    @id = params[:id]
+    erb :comments
+  end
+
+  post '/bookmarks/:id/comments' do
+    
+  end
+
   run! if app_file == $0
 
 end
