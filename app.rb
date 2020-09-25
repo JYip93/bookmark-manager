@@ -54,6 +54,17 @@ class BookmarkManager < Sinatra::Base
     redirect '/bookmarks'
   end
 
+  get '/bookmarks/tags/:id'do
+    @bookmark_id = params[:id]
+    erb :create_tags  
+  end
+
+  post '/bookmarks/:id/tags' do
+    #tag name and tag bookmark parameter 
+    #create tag in tag table and create bookmark_tag entry in bookmark_tag table
+    redirect '/bookmarks'
+  end
+
   run! if app_file == $0
 
 end

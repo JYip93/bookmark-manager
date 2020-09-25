@@ -2,5 +2,5 @@ require 'pg'
 
 def setup_test_database
   con = PG.connect dbname: 'bookmark_manager_test'
-  con.exec("TRUNCATE bookmarks CASCADE;")
+  con.exec("TRUNCATE bookmarks, comments, tags, bookmark_tags;")
 end
