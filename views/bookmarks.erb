@@ -14,5 +14,10 @@
 <form action="bookmarks/comments/<%=bookmark.id%>" method="get">
 <input type="submit" value="Add Comment">
 </form>
+<ul>
+<% bookmark.comments.each do |comment|%>
+  <li> <%=comment['text']%> </li>
+  <% end %>
+</ul>
 <% end %>
 

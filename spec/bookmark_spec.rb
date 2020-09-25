@@ -60,5 +60,13 @@ describe Bookmark do
 
   end 
 
+  # describe '#comment' do 
+  #   it 'adds a comment to a bookmark' do 
+  #     bookmark = Bookmark.create('Test', "http://www.test.com")
+  #     Bookmark.comment(bookmark.id, "this is a test comment")
+  #     expect(Bookmark.all[0].comment).to eq("this is a test comment")
+  #   end
+  # end 
+
 
 end
