@@ -16,10 +16,17 @@
 </form>
 <form action="bookmarks/tags/<%=bookmark.id%>" method="get">
 <input type="submit" value="Add tag">
-</form>
+</form><br>
+COMMENTS <br>
 <ul>
 <% bookmark.comments.each do |comment|%>
   <li> <%=comment.text%> </li>
+  <% end %>
+</ul>
+TAGS <br>
+<ul>
+<% bookmark.getting_tag_names.each do |tag_name|%>
+  <li> <%=tag_name%> </li>
   <% end %>
 </ul>
 <% end %>

@@ -4,6 +4,7 @@ feature 'Create tag' do
         visit ('/')
         click_button('Add tag')
         fill_in('Tag', with: 'Search engine')
+        click_button('Submit')
         expect(page).to have_content('Search engine')
     end
 end
